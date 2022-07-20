@@ -133,7 +133,6 @@ body {
   display: inline-block;
 }
 .card__footer-autor {
-  text-transform: capitalize;
   font-size: 1.1rem;
   margin: 5px 0;
 }
