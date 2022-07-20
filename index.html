@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unifeed</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <nav class="navigation">
+        <header class="navigation__header">
+            <img src="./Assets/Logo.svg" alt="" class="logo">
+            <button id="nav-btn" class="navigation__btn"><img src="./Assets/Hamburger Menu.svg" alt=""></button>
+        </header>
+        <ul class="navigation__list">
+            <li class="navigation__list-item"><a href="#" class="navigation__list-link">home</a></li>
+            <li class="navigation__list-item"><a href="#" class="navigation__list-link">feature</a></li>
+            <li class="navigation__list-item"><a href="#" class="navigation__list-link">pricing</a></li>
+            <li class="navigation__list-item"><button class="navigation__sub">suscribe</button></li>
+        </ul>
+    </nav>
+
+    <ul class="articles">
+        <li class="card">
+            <img src="./Assets/Main Article Image.png" alt="" class="card__img">
+            <div class="card__text">
+                <h3 class="card__title">weekly newsletter: Tweets for higher Engagements</h3>
+                <p class="card__description">From SEO to integrating with Paid Advertising. this article covers it all.
+                </p>
+
+                <footer class="card__footer">
+                    <img src="./Assets/User Avatar.png" alt="" class="card__avatar">
+                    <div class="card__footer-text">
+                        <h5 class="card__footer-autor">jessica andrews</h5>
+                        <span class="card__footer-status">Content manager</span>
+                    </div>
+                </footer>
+            </div>
+        </li>
+        <li class="card">
+            <img src="./Assets/Article 1_Image.png" alt="" class="card__img">
+            <div class="card__text">
+                <h3 class="card__title">7 Tips for Organic Traffic</h3>
+                <p class="card__description">From SEO to integrating with Paid Advertising. this article covers it all.
+                </p>
+
+                <footer class="card__footer">
+                    <img src="./Assets/User Avatar-1.png" alt="" class="card__avatar">
+                    <div class="card__footer-text">
+                        <h5 class="card__footer-autor">spencer david</h5>
+                        <span class="card__footer-status">SEO Specialist</span>
+                    </div>
+                </footer>
+            </div>
+        </li>
+        <li class="card">
+            <img src="./Assets/Article 2_Image.png" alt="" class="card__img">
+            <div class="card__text">
+                <h3 class="card__title">How To Start Your Own Business</h3>
+                <p class="card__description">Starting your own business in 2021 has never beeb easier.</p>
+
+                <footer class="card__footer">
+                    <img src="./Assets/User Avatar-2.png" alt="" class="card__avatar">
+                    <div class="card__footer-text">
+                        <h5 class="card__footer-autor">sara frey</h5>
+                        <span class="card__footer-status">Business leader</span>
+                    </div>
+                </footer>
+            </div>
+        </li>
+        <li class="card">
+            <img src="./Assets/Article 3_Image.png" alt="" class="card__img">
+            <div class="card__text">
+                <h3 class="card__title">5 Tips for Better Branding</h3>
+                <p class="card__description">From SEO to integrating with Paid Advertising. this article covers it all.
+                </p>
+
+                <footer class="card__footer">
+                    <img src="./Assets/User Avatar-3.png" alt="" class="card__avatar">
+                    <div class="card__footer-text">
+                        <h5 class="card__footer-autor">david suns</h5>
+                        <span class="card__footer-status">brand manager</span>
+                    </div>
+                </footer>
+            </div>
+        </li>
+    </ul>
+    <footer class="footer">
+        <img src="./Assets/Logo.svg" alt="" class="logo">
+        <p class="footer__text">Unifeed (c) 2017 All Copyrights Not Reserved</p>
+    </footer>
+
+    <script>
+        const navigationBtn = document.getElementById('nav-btn')
+
+        navigationBtn.addEventListener('click', () => {
+            document.querySelector('.navigation__list').classList.toggle('navigation__list--show')
+        })
+    </script>
+</body>
+
+</html>
